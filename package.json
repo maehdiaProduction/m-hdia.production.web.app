@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "firebase": "^9.22.1"
+  },
+  "scripts": {
+    "build": "node -e \"console.log('Running build script')\""
   }
 }
