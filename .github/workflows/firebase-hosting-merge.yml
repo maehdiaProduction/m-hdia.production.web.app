@@ -18,7 +18,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: "16"
 
       - name: Build
         run: npm ci && npm run build
@@ -26,12 +26,10 @@ jobs:
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MAEHDIA_PRODUCTION_C5079 }}'
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_MAEHDIA_PRODUCTION_C5079 }}"
           channelId: live
           projectId: maehdia-production-c5079
-          site: 'maehdia-production-c5079' # Update this to your Firebase site ID
-          directory: 'public' # Update this to the correct directory name
-
-
+          site: "maehdia-production-c5079" # Update this to your Firebase site ID
+          directory: "public" # Update this to the correct directory name
 
