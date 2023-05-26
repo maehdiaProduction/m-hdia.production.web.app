@@ -2507,6 +2507,7 @@ figcaption {
 
 .logo-image {
   display: block;
+  border-radius: 50%;
 }
 
 .navigation-items {
