@@ -6,7 +6,7 @@
   with:
     entryPoint: "public/build/index.html"
     repoToken: "${{ secrets.GITHUB_TOKEN }}"
-    firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_MAEHDIA_PRODUCTION_C5079 }}"
+    firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}"
     channelId: live
     projectId: maehdia-production-c5079
     directory: "public"
