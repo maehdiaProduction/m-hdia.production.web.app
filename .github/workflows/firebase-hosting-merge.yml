@@ -35,4 +35,4 @@ jobs:
           projectId: maehdia-production-c5079
           channelId: maehdia-production-c5079
           directory: "build"
-           target: hosting
+          target: hosting
