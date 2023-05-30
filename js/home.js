@@ -5,20 +5,6 @@
  *   var Webflow = Webflow || [];
  *   Webflow.push(readyFunction);
  */
-var btn = $("#button");
-
-$(window).scroll(function () {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass("show");
-  } else {
-    btn.removeClass("show");
-  }
-});
-
-btn.on("click", function (e) {
-  e.preventDefault();
-  $("html, body").animate({ scrollTop: 0 }, "300");
-});
 
 (() => {
   var __getOwnPropNames = Object.getOwnPropertyNames;
@@ -4045,6 +4031,7 @@ btn.on("click", function (e) {
   require_webflow_navbar();
   require_webflow_maps();
 })();
+
 /*!
  * tram.js v0.8.2-global
  * Cross-browser CSS3 transitions in JavaScript
